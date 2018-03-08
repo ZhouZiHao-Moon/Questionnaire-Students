@@ -1,0 +1,28 @@
+<html>
+<head>
+    <style>
+    body {
+        font-size: 20px;
+    }
+    </style>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
+    <title>南通中学软件编程学习兴趣调查表</title>
+</head>
+<body>
+    <h1 style="color: blue">感谢你参与此次调查问卷，祝你学习进步</h1>
+    <br />
+    <p>如果你对编程技术感兴趣，请在下面填写你的信息并提交</p>
+    <p>我们会在一段时间后发邮件邀请你加入交流群，有小哥哥，还有女装大佬哦/滑稽</p>
+    <form method="post">
+        {{ form.hidden_tag() }}
+        <p>{{ form.name.label }} {{ form.name() }} {{ form.errors.name }}</p>
+        <p>{{ form.number.label }} {{ form.number() }} {{ form.errors.number }}</p>
+        <p>{{ form.language.label }} {{ form.language() }} {{ form.errors.language }}</p>
+        <p>{{ form.submit() }}</p>
+    </form>
+    <br />
+    <br />
+    <br />
+    <p><font size="1" color="gray">**2018南通中学极客共进交流社**</font></p>
+</body>
+</html>
