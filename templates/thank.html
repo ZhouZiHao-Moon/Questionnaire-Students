@@ -15,9 +15,9 @@
     <p>我们会在一段时间后发邮件邀请你加入交流群，有小哥哥，还有女装大佬哦/滑稽</p>
     <form method="post">
         {{ form.hidden_tag() }}
-        <p>{{ form.name.label }} {{ form.name() }} {{ form.errors.name }}</p>
-        <p>{{ form.number.label }} {{ form.number() }} {{ form.errors.number }}</p>
-        <p>{{ form.language.label }} {{ form.language() }} {{ form.errors.language }}</p>
+        <p>{{ form.name.label }} {{ form.name() }} <span style="color:red">{{ form.errors.name }}</span></p>
+        <p>{{ form.number.label }} {{ form.number() }} <span style="color:red">{{ form.errors.number }}</span></p>
+        <p>{{ form.language.label }} {{ form.language() }}</p>
         <p>{{ form.submit() }}</p>
     </form>
     <br />

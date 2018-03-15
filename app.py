@@ -7,7 +7,7 @@ from flask_wtf import CSRFProtect,FlaskForm
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'abgiueb2389406@#%^%DFWE'
-CSRFProtect(app)
+app.config['WTF_CSRF_ENABLED'] = False
 fp = open('question.txt','r',encoding='utf-8')
 
 
